@@ -36,33 +36,3 @@ def add_book(req):
     if serialized_data.is_valid():
         serialized_data.save()
     return Response(serialized_data.data)
-
-
-
-@api_view(['DELETE'])
-def delete_book(req):
-
-    serialized_data = Bookserializers(data=req.data)
-    if serialized_data.is_valid():
-        serialized_data.delete()
-    return Response(serialized_data.data)
-
-
-
-@api_view(['PATCH'])
-def patch_book(req):
-
-    serialized_data = Bookserializers(data=req.data)
-    if serialized_data.is_valid():
-        serialized_data.save()
-    return Response(serialized_data.data)
-
-
-
-@api_view(['PUT'])
-def put_book(req):
-
-    serialized_data = Bookserializers(data=req.data)
-    if serialized_data.is_valid():
-        serialized_data.save()
-    return Response(serialized_data.data)
