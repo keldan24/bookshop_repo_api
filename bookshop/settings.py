@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-av82vzcn=5fh4j1+bwhk$=22(d3+h1@odv^a%%e5nv4s%l!2)*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ['DEBUG']
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bookshop-api-m0ud.onrender.com']
 
 
 # Application definition
